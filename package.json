@@ -1,0 +1,39 @@
+{
+  "name": "line-chart-visualizer",
+  "version": "1.1.0",
+  "description": "git ",
+  "main": "dist/LineChart.js",
+  "exports": {
+    ".": "./dist/LineChart.js",
+    "./react": "./dist/ReactLineChart.js"
+  },
+  "scripts": {
+    "build": "babel src --out-dir dist --extensions '.js'",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ctokx/line-chart-visualizer"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "chart",
+    "linechart",
+    "data-visualization",
+    "canvas",
+    "plot",
+    "graph"
+  ],
+  "author": "Varol Cagdas Tok",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-react": "^7.24.1"
+  },
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0"
+  }
+}
